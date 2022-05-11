@@ -24,7 +24,7 @@ sortedRelativeFrequency = sort(unlist(relativeFrequency_list), decreasing = TRUE
 top10AndOther = sortedRelativeFrequency[1:10]
 top10AndOther = c(top10AndOther, setNames(sum(sortedRelativeFrequency[11:length(sortedRelativeFrequency)]),"other"))
 
-lbls <- paste(names(top10AndOther), ":", round(top10AndOther), "%")
+lbls = paste(names(top10AndOther), ":", round(top10AndOther), "%")
 pie(top10AndOther, main = "Ratio of TOP 10 ", labels = lbls)
 
     
